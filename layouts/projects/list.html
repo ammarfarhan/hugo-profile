@@ -20,18 +20,21 @@
                 <div class="card-head">
                     <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
                 </div>
-                <div class="card-body bg-transparent p-3">
+                <div class="card-body bg-transparent p-3 shadow-sm">
                     <div class="pb-2 bg-transparent">
-                        {{ range .Params.badges }}
+                        {{ range .Params.tags }}
                         <span class="badge badge-secondary">{{ . }}</span>
                         {{ end }}
                     </div>
-                    <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
+                    <a href="{{ .RelPermalink }}" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 50 }}</h5>
+                    </a>
                     <div class="card-text bg-transparent secondary-font">
                         {{ .Summary | truncate 100 | safeHTML }}
                     </div>
                 </div>
                 <div class="card-footer py-3">
+                    <span class="float-start">{{ .Date.Format (.Site.Params.datesFormat.articleRecent | default "January 2, 2006") }}</span>
                     {{ range .Params.links }}
                     <span class="m-1 mx-2">
                         <a href="{{ .url }}" target="_blank">
@@ -41,7 +44,7 @@
                     {{ end }}
                     <span class="float-end">
                         <a class="btn btn-sm" href="{{ .RelPermalink }}">
-                            Know more
+                            Read
                         </a>
                     </span>
                 </div>
