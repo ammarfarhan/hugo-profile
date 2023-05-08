@@ -28,6 +28,11 @@
 #single .page-content img {
     max-width: 100%;
     border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#single .page-content iframe{
+    margin-bottom: 1rem;
 }
 
 #single .page-content a {
@@ -144,7 +149,7 @@
     margin-bottom: 1.2em;
     padding-left: 1.5em;
     list-style-position: inside;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 
 #single .page-content ol li li, #single .page-content ul li li {
@@ -174,6 +179,7 @@
 
 
 #single aside.tags ul.tags-ul li a {
+    font-size: 16px;
     padding: 10px 15px;
     margin-bottom: 2px;
     border-radius: 8px;
@@ -203,7 +209,7 @@
 }
 
 #single aside.toc .toc-content ol, #single aside.toc .toc-content ul {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     padding-left: .5em;
     list-style: none;
     opacity: 0.9;

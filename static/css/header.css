@@ -106,6 +106,10 @@ li > .dropdown-toggle:focus{
     color: var(--text-color) !important;
 }
 
+#search-results .card h5 {
+    margin-bottom: 0;
+}
+
 #search-results .card a:hover {
     color: var(--primary-color) !important;
 }
