@@ -37,6 +37,7 @@
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border: none !important;
+    height: 250px !important;
 }
 
 #projects .card .card-footer {
@@ -51,6 +52,7 @@
 
 #projects .card-img-top {
     transition: transform 0.3s;
+    height: 100%;
 }
 
 #projects .float-end .btn {
