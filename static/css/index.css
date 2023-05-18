@@ -521,7 +521,7 @@ header .navbar.animate {
     color: var(--text-secondary-color) !important;
 }
 
-#contact .btn {
+#contact .btn, #projects .btn {
     transition: none;
     transition: opacity 0.3s;
     border-radius: .5rem !important;
@@ -530,11 +530,11 @@ header .navbar.animate {
     color: var(--text-color) !important;
 }
 
-#contact .btn:hover {
+#contact .btn:hover, #projects .btn:hover {
     opacity: .7;
 }
 
-#contact .btn:focus {
+#contact .btn:focus, #projects .btn:focus {
     box-shadow: none !important;
 }
 
