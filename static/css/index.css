@@ -373,6 +373,7 @@ header .navbar.animate {
 #experience .experience-container .tab-content .tab-pane .featuredLink a.btn {
     border: 1px solid var(--primary-color);
     border-radius: .75rem;
+    margin-right: 0.5rem;
     transition: none;
 }
 
